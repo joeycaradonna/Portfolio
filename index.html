@@ -4,7 +4,8 @@
 <head>
   <title>Joey Caradonna | Web Developer | Austin, TX</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Courgette|Merriweather+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -22,32 +23,32 @@
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-      </button>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
             <li>
               <a href="#">
-                                 HOME
-                            </a>
+                HOME
+              </a>
             </li>
             <li>
               <a href="#about">
-                                 ABOUT
-                            </a>
+                ABOUT
+              </a>
             </li>
             <li>
               <a href="#projects">
-                                PROJECTS
-                            </a>
+                PROJECTS
+              </a>
             </li>
             <li>
               <a href="#contact">
-                                CONTACT
-                            </a>
+                CONTACT
+              </a>
             </li>
           </ul>
         </div>
@@ -59,11 +60,11 @@
   <section id="top">
     <img id="homeimg" class="animated fadeInDown" src="img/ppp.jpg" alt="#">
     <h1 id="herotext">
-          <p class="animated slideInLeft">Joey Caradonna</p>
-        </h1>
+      <p class="animated slideInLeft">Joey Caradonna</p>
+    </h1>
     <h2 id="ptext">
-        <p class="animated slideInRight">Web Developer</p>
-      </h2>
+      <p class="animated slideInRight">Web Developer</p>
+    </h2>
   </section>
   <section id="about">
 
@@ -76,35 +77,38 @@
             <img id=pfpimage src="img/pfp2.jpg" onmouseover="this.src='img/pfp3.jpg';" onmouseout="this.src='img/pfp2.jpg';" alt="">
           </div>
           <div class="col-md-6 col-sm-12">
-            <p>My name is Joey Caradonna and I’m a web developer based out of Austin, Texas where I can proudly say I was born and raised. I was first introduced to coding over 2 years ago when I started programming school at Austin Coding Academy. I graduated July of 2017 with a Full-Stack Web Developer certification. Building and creating things has always intrigued me so it's no surprise coding would become the missing piece of my career puzzle. Recently I’ve been utilizing the <button id="myBtn">skills</button> I've acquired to create websites for various contacts and further strengthen my knowledge of web development. When I'm not working away on my computer I'm going on adventures with my wife and getting cozy on the couch with our two dogs while Netflix binging.<br><br> Below I have attached my resume and if you wish to contact me
+            <p>My name is Joey Caradonna and I’m a web developer based out of Austin, Texas where I can proudly say I was born and raised. I was first introduced to coding over 2 years ago when I started programming school at Austin Coding Academy.
+              I graduated July of 2017 with a Full-Stack Web Developer certification. Building and creating things has always intrigued me so it's no surprise coding would become the missing piece of my career puzzle. Recently I’ve been utilizing
+              the <button id="myBtn">skills</button> I've acquired to create websites for various contacts and further strengthen my knowledge of web development. When I'm not working away on my computer I'm going on adventures with my wife and
+              getting cozy on the couch with our two dogs while Netflix binging.<br><br> Below I have attached my resume and if you wish to contact me
               <a id="contactClickMe" href="#contact">click here</a>.
             </p>
-              <div id="myModal" class="modal">
-                <div class="modal-content"><span class="close">&times;</span>
-                  <p><img id="liamneeson" src="img/liamneeson.jpg" alt="#"></p>
-                </div>
+            <div id="myModal" class="modal">
+              <div class="modal-content"><span class="close">&times;</span>
+                <p><img id="liamneeson" src="img/liamneeson.jpg" alt="#"></p>
               </div>
-              <script>
-                var modal = document.getElementById('myModal');
+            </div>
+            <script>
+              var modal = document.getElementById('myModal');
 
-                var btn = document.getElementById("myBtn");
+              var btn = document.getElementById("myBtn");
 
-                var span = document.getElementsByClassName("close")[0];
+              var span = document.getElementsByClassName("close")[0];
 
-                btn.onclick = function() {
-                  modal.style.display = "block";
-                }
+              btn.onclick = function() {
+                modal.style.display = "block";
+              }
 
-                span.onclick = function() {
+              span.onclick = function() {
+                modal.style.display = "none";
+              }
+
+              window.onclick = function(event) {
+                if (event.target == modal) {
                   modal.style.display = "none";
                 }
-
-                window.onclick = function(event) {
-                  if (event.target == modal) {
-                    modal.style.display = "none";
-                  }
-                }
-              </script>
+              }
+            </script>
             <button class="button" style="vertical-align:middle"><span><a href="img/JoeyCResume.pdf" id="resumelink" target="_blank">My Resume </a></span></button>
           </div>
         </div>
@@ -118,19 +122,19 @@
           <h3 id="projecthead">PROJECTS</h3>
           <div class="col-lg-6 col-md-6 col-sm-12">
             <a href="https://24reese.com/" target="_blank">
-                                    <img id="reese" src="img/reese.jpg" target="_blank" alt="#">
-                                </a>
+              <img id="reese" src="img/reese.jpg" target="_blank" alt="#">
+            </a>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12">
             <a href="guitar.html" target="_blank">
-                                    <img id="guitar-site" src="img/guitar-site-mock.jpg" target="_blank" alt="#">
-                                </a>
+              <img id="guitar-site" src="img/guitar-site-mock.jpg" target="_blank" alt="#">
+            </a>
 
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12">
             <a href="band.html" target="_blank">
-                                    <img id="band-site" src="img/band-site-mock.jpg" target="_blank" alt="#">
-                                </a>
+              <img id="band-site" src="img/band-site-mock.jpg" target="_blank" alt="#">
+            </a>
           </div>
       </div>
       </section>
@@ -166,5 +170,5 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script>
-    < /body> < /
-    html >
+    < /body>  <
+    /html >
